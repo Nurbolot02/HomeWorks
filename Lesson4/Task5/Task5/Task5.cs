@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Console;
 using static SortMinMax.SortMinMax;
 
 namespace Task5
@@ -14,6 +15,7 @@ namespace Task5
             // Отсортировать массив 
             int[] numbers = { 9, 5, 4, 10, 7, 2, 54, 1, 0 };
             sortMinMax(numbers);
+            ReadKey();
         }
     }
 }
