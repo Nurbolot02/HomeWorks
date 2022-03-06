@@ -7,4 +7,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\UsefulFutires\Fibonacci\Fibonacci\Fibonacci\Fibonacci\Fibonacci.csproj" />
+  </ItemGroup>
+
 </Project>
