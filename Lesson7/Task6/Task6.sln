@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32228.430
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task6", "Task6\Task6.csproj", "{0BD75A3D-4BBD-4D52-944D-D33823ED22B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrintArray2D", "..\..\UsefulFutires\PrintArray2D\ClassLibrary1\PrintArray2D.csproj", "{8413A59A-18DE-4370-88F1-7FB653E60864}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0BD75A3D-4BBD-4D52-944D-D33823ED22B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BD75A3D-4BBD-4D52-944D-D33823ED22B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BD75A3D-4BBD-4D52-944D-D33823ED22B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BD75A3D-4BBD-4D52-944D-D33823ED22B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8413A59A-18DE-4370-88F1-7FB653E60864}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8413A59A-18DE-4370-88F1-7FB653E60864}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8413A59A-18DE-4370-88F1-7FB653E60864}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8413A59A-18DE-4370-88F1-7FB653E60864}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {19D87D75-9C13-4D77-8F9F-633B151279ED}
+	EndGlobalSection
+EndGlobal
