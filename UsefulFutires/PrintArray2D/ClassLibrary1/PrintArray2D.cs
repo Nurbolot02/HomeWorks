@@ -37,6 +37,27 @@ namespace PrintArray2D
                 System.Console.WriteLine();
             }
         }
+        static public void printArray2D(int[,] array,int count, bool arg)
+        {
+            bool flag = false;
+            for (int i = 0; i < count; i++)
+            {
+                if (flag)
+                {
+                    break;
+                }
+                for (int j = 0; j < array.GetLength(1); j++)
+                {
+                    if (array[i, j] == 0)
+                    {
+                        flag = true;
+                        break;
+                    }
+                    System.Console.Write(array[i, j] + " ");
+                }
+                System.Console.WriteLine();
+            }
+        }
 
         static public void printArray2D(double[,] array)
         {
