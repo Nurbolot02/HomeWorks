@@ -3,50 +3,69 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using static ArrayMaster.PrintArray;
 
 namespace SortMinMax
 {
     static public class SortMinMax
     {
-        static public void sortMinMax(int[] numbers)
+        static public int[] sortMinMax(int[] array)
         {
-            printArray(numbers);
             int minNumber, minNumberIndex,
                 maxNumber, maxNumberIndex;
 
-            for (int i = 0; i < numbers.Length / 2; i++)
+            for (int i = 0; i < array.Length / 2; i++)
             {
-                minNumber = numbers[i];
+                minNumber = array[i];
                 minNumberIndex = i;
-                maxNumber = numbers[i];
+                maxNumber = array[i];
                 maxNumberIndex = i;
-                for (int j = 1 + i; j < numbers.Length - i; j++)
+                for (int j = 1 + i; j < array.Length - i; j++)
                 {
-                    if (numbers[j] < minNumber)
+                    if (array[j] < minNumber)
                     {
-                        minNumber = numbers[j];
+                        minNumber = array[j];
                         minNumberIndex = j;
                     }
-                    else if (numbers[j] > maxNumber)
+                    else if (array[j] > maxNumber)
                     {
-                        maxNumber = numbers[j];
+                        maxNumber = array[j];
                         maxNumberIndex = j;
                     }
                 }
-                if (numbers[i] > minNumber)
+                if (array[i] > minNumber)
                 {
-                    numbers[minNumberIndex] = numbers[i];
-                    numbers[i] = minNumber;
+                    array[minNumberIndex] = array[i];
+                    array[i] = minNumber;
                 }
-                if (numbers[numbers.Length - i - 1] < maxNumber)
+                if (array[array.Length - i - 1] < maxNumber)
                 {
-                    numbers[maxNumberIndex] = numbers[numbers.Length - i - 1];
-                    numbers[numbers.Length - i - 1] = maxNumber;
+                    array[maxNumberIndex] = array[array.Length - i - 1];
+                    array[array.Length - i - 1] = maxNumber;
+                }
+            }
+            return array;
+        }
+
+        static public int[,] sortMinMax(int[,] array)
+        {
+            int buffer, count = 0; ;
+            for (int k = 0; k < array.GetLength(0) * array.GetLength(1); k++)
+            {
+                for (int i = 0; i < array.GetLength(0); i++)
+                {
+                    for (int j = 0; j < array.GetLength(1) - 1; j++)
+                    {
+                        if (array[i, j] > array[i, j + 1])
+                        {
+                            buffer = array[i, j];
+                            array[i, j] = array[i, j + 1];
+                            array[i, j + 1] = buffer;
+                        }
+                    }
                 }
             }
 
-            printArray(numbers);
+            return array;
         }
     }
 }
