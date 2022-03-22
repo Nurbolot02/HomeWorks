@@ -29,8 +29,9 @@ namespace Task6
                 result *= a; 
             }
             Console.WriteLine($"{a} to the {b} power == {result}");
-            Console.Write("Нажмите любую клавишу чтобы перейти к решения припомоши рекурсии: ");
+            Console.Write("Нажмите любую клавишу чтобы перейти к решения при помоши рекурсии: ");
             Console.ReadKey();
+            Console.Clear();
 
             a = isNumber(aStr, true);
             b = isNumber(bStr, true);
