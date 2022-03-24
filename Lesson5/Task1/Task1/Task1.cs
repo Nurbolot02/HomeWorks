@@ -32,26 +32,7 @@ namespace Task1
                 }
             }
             Console.WriteLine($"negative numbers sum: {negativeNumber} \nnumbers sum : {number}");
-
-            //Задача 35: Определить, присутствует ли в заданном массиве, некоторое число 
-
-            Console.Write("Enter the number: ");
-            number = int.Parse(Console.ReadLine());
-            for (int i = 0; i < array.Length; i++)
-            {
-                if (i == array.Length - 1)
-                {
-                    Console.WriteLine(false);
-                }
-
-                else if (array[i] == number)
-                {
-                    Console.WriteLine(true);
-                    break;
-                }
-
-            }
-            ReadKey();
+            
         }
     }
 }

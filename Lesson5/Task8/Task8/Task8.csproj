@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\UsefulFutires\ArrayMaster\ArrayMaster.csproj" />
-    <ProjectReference Include="..\..\..\UsefulFutires\FillArrayRandom\FillArrayRandom\FillArrayRandom.csproj" />
+    <ProjectReference Include="..\..\..\..\New folder\HomeWorks\UsefulFutires\ArrayMaster\ArrayMaster.csproj" />
+    <ProjectReference Include="..\..\..\..\New folder\HomeWorks\UsefulFutires\FillArrayRandom\FillArrayRandom\FillArrayRandom.csproj" />
   </ItemGroup>
 
 </Project>
