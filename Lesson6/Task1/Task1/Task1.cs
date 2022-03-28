@@ -30,7 +30,7 @@ namespace Task1
 
         static bool IsTriangleSides (double A, double B, double C)
         {
-            return A < C + B || C < A + B || B < A + C;
+            return A < C + B && C < A + B && B < A + C;
         }
     }
 }

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static IsNumber.IsNumber;
+
 
 namespace Task6
 {
@@ -10,9 +12,11 @@ namespace Task6
     {
         static void Main(string[] args)
         {
-            /* Задача 44: Найти точку пересечения двух прямых заданных уравнением y = k1 * x + b1, y = k2 * x + b2, если b1, k1, b2 и k2 заданы */
+            /* Задача 43. Напишите программу, которая найдёт точку пересечения двух прямых, заданных уравнениями 
+             * y = k1 * x + b1, y = k2 * x + b2; 
+             * значения b1, k1, b2 и k2 задаются пользователем.
+               b1 = 2, k1 = 5, b2 = 4, k2 = 9 -> (-0,5; 5,5) */
 
-            int 
         }
     }
 }
