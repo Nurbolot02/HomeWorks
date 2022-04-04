@@ -33,8 +33,7 @@ namespace Task3
             {
                 for (int j = 0; j < array.GetLength(1); j++)
                 {
-                    if (ignoreElement(diction, array[i, j], counter));
-                    else
+                    if (!ignoreElement(diction, array[i, j], counter)) 
                     {
                         diction[counter, 0] = array[i, j];
                         diction[counter, 1] ++;
