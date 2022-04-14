@@ -37,7 +37,7 @@ namespace Task1
             if(n >= 1)
             {
                 Console.Write(n1 + " ");
-                ShowNumber(n2, n2 + n1, n - 1);
+                ShowNumber(n1, n1 + n2, n - 1);
             }
         }
     }

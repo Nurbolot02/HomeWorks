@@ -126,5 +126,22 @@ namespace ListMaster
                 }
             }
         }
+        public int Length()
+        {
+            return array.Length;
+        }
+
+        public void FillSpiral()
+        {
+            array[0, 0] = 1;
+            int rowLength = array.GetLength(0);
+            for (int i = 2, x = 0, y = 0; i <= array.Length;)
+            {
+                while (y + 1 < rowLength && array[x, y + 1] == 0) array[x, ++y] = i++;
+                while (x + 1 < rowLength && array[x + 1, y] == 0) array[++x, y] = i++;
+                while (y - 1 > -1 && array[x, y - 1] == 0) array[x, --y] = i++;
+                while (x - 1 > -1 && array[x - 1, y] == 0) array[--x, y] = i++;
+            }
+        }
     }
 }

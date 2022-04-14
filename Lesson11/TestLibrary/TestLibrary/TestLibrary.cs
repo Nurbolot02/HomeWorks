@@ -16,6 +16,7 @@ namespace TestLibrary
             createdArray.SetSize(10);
             createdArray.FillRandom(10, 50);
             createdArray.Print(printType);
+
             createdArray.SortBuble();
             createdArray.Print(printType);
             Console.WriteLine();
@@ -23,9 +24,13 @@ namespace TestLibrary
             ArrayMaster2D array2D = new ArrayMaster2D();
             array2D.SetSize(3,4);
             array2D.Print();
+
             array2D.FillRandom(50, 85);
             array2D.Print();
 
+            array2D.SetSize(4,4);
+            array2D.FillSpiral();
+            array2D.Print();
         }
     }
 }

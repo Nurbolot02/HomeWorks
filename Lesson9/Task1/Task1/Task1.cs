@@ -16,27 +16,25 @@ namespace Task1
             N = 5 -> "1, 2, 3, 4, 5"
             N = 6 -> "1, 2, 3, 4, 5, 6"
              */
-            Console.WriteLine("Задача 66: Задайте значение N. Напишите программу, которая выведет"+
-            "все натуральные числа в промежутке от 1 до N."+
-            "N = 5-> 1, 2, 3, 4, 5"+
+            Console.WriteLine("Задача 66: Задайте значение N. Напишите программу, которая выведет" +
+            "все натуральные числа в промежутке от 1 до N." +
+            "N = 5-> 1, 2, 3, 4, 5" +
             "N = 6-> 1, 2, 3, 4, 5, 6");
-            string rowString = "enter the number  n: ";
+            string rowString = "enter 1- number : ";
             int n = isNumber(rowString, true);
-            ShowNumberN(n);
+            string rowString2 = "enter 2- number : ";
+            int n2 = isNumber(rowString2, true);
+            ShowNumberN(n, 2);
 
         }
 
-        static void ShowNumberN(int n)
+        static void ShowNumberN(int min, int max)
         {
-            if(n < 1)
+            if (max >= min)
             {
-                ShowNumberN(n);
+                Console.Write(min + " ");
+                ShowNumberN(++min, max);
             }
-            else if(n > 1)
-            {
-                ShowNumberN(n - 1);
-            }
-            Console.Write(n + " ");
         }
     }
 }
